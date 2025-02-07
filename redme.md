@@ -1,0 +1,9 @@
+♥️ EntregaFinalJS
+
+Nombre del proyecto: ANAN7A Multiespacio
+Contexto: el proyecto desarrolla una simulación con JavaScript, para un centro de Yoga, que permita al usuario de la web conocer la agenda de clases y el cupo en cada clase, e inscribirse a las clases. Esto al negocio le permitirá administrar las inscripciones y planificar y comunicar las clases disponibles cada mes.
+Características y desarrollo de la simulación: el proyecto presenta, en una página de un sitio más grande, la agenda de clases de un espacio de Yoga.
+Esto se construye dinamicamente con un módulo de JavaScript, que permite mantener la funcionalidad principal del calendario independiente del archivo JS principal. Se utiliza este recurso para luego renderizar las clases disponibles en el archivo main mediante el método fetch, invocando un script independiente. Para mayor seguridad, LocalStorage se usa como almacenamiento persistente en el navegador. La información de las clases ademas se puede descargar en un archivo JSON. Este archivo main.js, es el que construye dinamicamente el calendario de clases. Dicho calendario se apoya en Luxon para conseguir la precisión necesaria de una agenda. La agenda permite la interacción con el usuario, invita a inscribirse a un estilo y horario determinados, informando la inscripcion exitosa, o fallida en caso que la clase no tuviera cupos disponibles.
+
+Tecnologías utilizadas:
+-Frontend: HTML5 → Estructura del sitio web. CSS3 → Estilización de los elementos, incluyendo clases dinámicas y estilos en línea. JavaScript (ES6+) → Lógica del calendario, manipulación del DOM y manejo de eventos. -Librerías y herramientas: Luxon (Manejo de fechas) → Se usa para calcular el primer día del mes y gestionar fechas con más facilidad. SweetAlert2 → Se utiliza para mostrar alertas personalizadas y mejorar la experiencia del usuario. Bootstrap (Spinner) → Para mostrar un indicador de carga mientras se renderiza el calendario.
